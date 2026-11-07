@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>黄果短剧-短剧推荐与追剧指南_热门短剧盘点与类型解析</title>
+  <meta name="description" content="黄果短剧专题页汇集热门短剧推荐、类型解析、追剧指南与用户真实评论。从节奏爽点到人物弧光，帮你快速找到适合追的短剧，了解黄果短剧的内容风格与更新动态，收藏这一页就够了。">
+  <meta name="keywords" content="黄果短剧,短剧推荐,微短剧,短剧类型,追剧指南">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f4a261'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif'%3E黄%3C/text%3E%3C/svg%3E">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg:#faf7f2;
+      --surface:#ffffff;
+      --surface2:#fdf3e7;
+      --text:#2d2a26;
+      --text2:#6b6560;
+      --text3:#9e9892;
+      --accent:#e76f51;
+      --accent2:#f4a261;
+      --accent3:#e9c46a;
+      --border:#ede8e1;
+      --radius:14px;
+      --radius-sm:8px;
+      --shadow:0 2px 12px rgba(60,40,20,.06);
+      --shadow-hover:0 8px 28px rgba(60,40,20,.12);
+      --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font);
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+    /* nav */
+    .topbar{
+      background:var(--surface);
+      border-bottom:1px solid var(--border);
+      position:sticky;top:0;z-index:100;
+      backdrop-filter:blur(8px);
+    }
+    .topbar .wrap{
+      display:flex;align-items:center;gap:24px;height:58px;
+      overflow-x:auto;
+    }
+    .logo{
+      display:flex;align-items:center;gap:8px;
+      font-weight:800;font-size:17px;white-space:nowrap;
+      color:var(--accent);
+    }
+    .logo-mark{
+      width:30px;height:30px;border-radius:8px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-size:15px;font-weight:800;
+    }
+    .nav-links{display:flex;gap:4px;flex:1}
+    .nav-links a{
+      padding:6px 12px;border-radius:20px;font-size:13.5px;
+      color:var(--text2);white-space:nowrap;transition:.18s;
+    }
+    .nav-links a:hover{background:var(--surface2);color:var(--accent)}
+    .nav-cta{
+      padding:7px 18px;border-radius:20px;background:var(--accent);
+      color:#fff;font-size:13px;font-weight:600;white-space:nowrap;
+      transition:.18s;
+    }
+    .nav-cta:hover{background:#d55a3f;transform:translateY(-1px)}
+
+    /* banner */
+    .banner{
+      background:linear-gradient(135deg,#fdf0e6 0%,#fce4d4 45%,#f9dcc9 100%);
+      padding:52px 0 44px;position:relative;overflow:hidden;
+    }
+    .banner::after{
+      content:"";position:absolute;right:-60px;top:-60px;
+      width:320px;height:320px;border-radius:50%;
+      background:radial-gradient(circle,rgba(231,111,81,.12),transparent 70%);
+      pointer-events:none;
+    }
+    .banner-inner{position:relative;z-index:1;max-width:780px}
+    .banner-tag{
+      display:inline-flex;align-items:center;gap:6px;
+      background:rgba(231,111,81,.12);color:var(--accent);
+      font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;
+      margin-bottom:16px;letter-spacing:.4px;
+    }
+    .banner h1{
+      font-size:clamp(26px,4.2vw,40px);line-height:1.25;
+      font-weight:800;letter-spacing:-.5px;margin-bottom:14px;
+    }
+    .banner h1 em{font-style:normal;color:var(--accent)}
+    .banner-desc{
+      font-size:15px;color:var(--text2);line-height:1.8;
+      margin-bottom:24px;max-width:620px;
+    }
+    .search-box{
+      display:flex;max-width:480px;
+      background:var(--surface);border-radius:28px;
+      box-shadow:0 4px 20px rgba(231,111,81,.13);
+      overflow:hidden;border:1px solid rgba(231,111,81,.14);
+    }
+    .search-box input{
+      flex:1;border:0;outline:0;padding:12px 20px;
+      font-size:14px;background:transparent;color:var(--text);
+      font-family:var(--font);
+    }
+    .search-box input::placeholder{color:var(--text3)}
+    .search-box button{
+      border:0;background:var(--accent);color:#fff;
+      padding:0 22px;font-size:14px;font-weight:600;
+      cursor:pointer;transition:.18s;font-family:var(--font);
+    }
+    .search-box button:hover{background:#d55a3f}
+    .banner-btns{
+      display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;
+    }
+    .banner-btns a{
+      padding:7px 16px;border-radius:20px;
+      background:rgba(255,255,255,.7);backdrop-filter:blur(4px);
+      font-size:13px;color:var(--text2);font-weight:500;
+      border:1px solid rgba(231,111,81,.12);
+      transition:.18s;
+    }
+    .banner-btns a:hover{background:#fff;color:var(--accent);border-color:rgba(231,111,81,.3);transform:translateY(-1px)}
+
+    /* section common */
+    section{padding:48px 0}
+    section:nth-child(even){background:var(--surface)}
+    .sec-head{
+      display:flex;align-items:baseline;justify-content:space-between;
+      gap:16px;margin-bottom:28px;flex-wrap:wrap;
+    }
+    .sec-head h2{
+      font-size:clamp(20px,2.6vw,26px);font-weight:800;
+      letter-spacing:-.3px;position:relative;
+      padding-left:14px;
+    }
+    .sec-head h2::before{
+      content:"";position:absolute;left:0;top:4px;bottom:4px;
+      width:4px;border-radius:2px;
+      background:linear-gradient(180deg,var(--accent),var(--accent2));
+    }
+    .sec-head .sub{font-size:13px;color:var(--text3);font-weight:400}
+    .sec-head .more{
+      font-size:13px;color:var(--accent);font-weight:600;
+      white-space:nowrap;transition:.18s;
+    }
+    .sec-head .more:hover{opacity:.7}
+
+    /* intro */
+    .intro-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:32px;
+      align-items:start;
+    }
+    .intro-text p{
+      font-size:14.5px;color:var(--text2);line-height:1.9;
+      margin-bottom:14px;text-align:justify;
+    }
+    .intro-text p strong{color:var(--text);font-weight:600}
+    .intro-stats{
+      display:grid;grid-template-columns:1fr 1fr;gap:12px;
+    }
+    .stat-card{
+      background:var(--surface2);border-radius:var(--radius);
+      padding:18px;border:1px solid var(--border);
+    }
+    .stat-num{
+      font-size:26px;font-weight:800;color:var(--accent);
+      line-height:1.2;margin-bottom:2px;
+    }
+    .stat-label{font-size:12px;color:var(--text3)}
+
+    /* cards */
+    .card-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    }
+    .card{
+      background:var(--surface);border-radius:var(--radius);
+      border:1px solid var(--border);box-shadow:var(--shadow);
+      overflow:hidden;transition:.22s;display:flex;flex-direction:column;
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+    .card-cover{
+      height:130px;position:relative;overflow:hidden;
+      background:linear-gradient(135deg,#f8e8d8,#f2d8c2);
+      display:flex;align-items:flex-end;padding:12px;
+    }
+    .card-cover.c1{background:linear-gradient(135deg,#f8e8d8,#eccab0)}
+    .card-cover.c2{background:linear-gradient(135deg,#fde2d4,#f5c6a8)}
+    .card-cover.c3{background:linear-gradient(135deg,#f7e3c9,#e9c99e)}
+    .card-cover.c4{background:linear-gradient(135deg,#fbe0d0,#f0c2a5)}
+    .card-cover.c5{background:linear-gradient(135deg,#f9e9d2,#e8cca8)}
+    .card-cover.c6{background:linear-gradient(135deg,#fce4d6,#f2c9b0)}
+    .card-cover.c7{background:linear-gradient(135deg,#f6e5d5,#e7c9ae)}
+    .card-cover.c8{background:linear-gradient(135deg,#fae0cc,#efc3a2)}
+    .card-cover.c9{background:linear-gradient(135deg,#f8e9dd,#ecccb6)}
+    .card-cover.c10{background:linear-gradient(135deg,#fbe4d2,#f0c8ac)}
+    .card-cover.c11{background:linear-gradient(135deg,#f9e3cd,#ebc5a6)}
+    .card-cover.c12{background:linear-gradient(135deg,#fce6d8,#f1cbb4)}
+    .card-cover .tag{
+      font-size:11px;font-weight:600;padding:3px 9px;
+      border-radius:12px;background:rgba(255,255,255,.75);
+      color:var(--accent);backdrop-filter:blur(4px);
+    }
+    .card-body{padding:16px;display:flex;flex-direction:column;flex:1}
+    .card-body h3{
+      font-size:15px;font-weight:700;margin-bottom:6px;
+      line-height:1.4;
+    }
+    .card-body h3:hover{color:var(--accent)}
+    .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+    .card-tags span{
+      font-size:11px;padding:2px 8px;border-radius:10px;
+      background:var(--surface2);color:var(--text3);
+    }
+    .card-desc{
+      font-size:12.5px;color:var(--text2);line-height:1.7;
+      flex:1;margin-bottom:12px;
+    }
+    .card-meta{
+      display:flex;align-items:center;justify-content:space-between;
+      font-size:11.5px;color:var(--text3);
+      border-top:1px solid var(--border);padding-top:10px;
+    }
+    .card-meta strong{color:var(--accent);font-weight:700}
+
+    /* updates list */
+    .update-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .update-item{
+      display:flex;align-items:flex-start;gap:12px;
+      padding:13px 16px;background:var(--surface2);
+      border-radius:var(--radius-sm);border:1px solid var(--border);
+      transition:.18s;
+    }
+    .update-item:hover{background:#fff;box-shadow:var(--shadow)}
+    .update-dot{
+      width:8px;height:8px;border-radius:50%;background:var(--accent);
+      margin-top:8px;flex-shrink:0;
+    }
+    .update-content{flex:1;min-width:0}
+    .update-content strong{font-size:13.5px;display:block;margin-bottom:2px}
+    .update-content p{font-size:12px;color:var(--text3);line-height:1.6}
+    .update-time{font-size:11px;color:var(--text3);white-space:nowrap;margin-top:2px}
+
+    /* categories */
+    .cat-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+    }
+    .cat-item{
+      display:flex;align-items:center;gap:10px;
+      padding:14px 16px;background:var(--surface);
+      border-radius:var(--radius-sm);border:1px solid var(--border);
+      transition:.18s;
+    }
+    .cat-item:hover{border-color:var(--accent2);background:var(--surface2);transform:translateY(-2px)}
+    .cat-icon{
+      width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent2),var(--accent3));
+      display:flex;align-items:center;justify-content:center;
+      font-size:16px;flex-shrink:0;
+    }
+    .cat-item span{font-size:13.5px;font-weight:600}
+
+    /* deep analysis */
+    .analysis-grid{
+      display:grid;grid-template-columns:1.6fr 1fr;gap:36px;
+    }
+    .analysis-text h3{
+      font-size:17px;font-weight:700;margin:22px 0 10px;
+      color:var(--text);
+    }
+    .analysis-text h3:first-child{margin-top:0}
+    .analysis-text p{
+      font-size:14px;color:var(--text2);line-height:1.9;
+      margin-bottom:14px;text-align:justify;
+    }
+    .analysis-text p strong{color:var(--text);font-weight:600}
+    .aside-box{
+      background:var(--surface2);border-radius:var(--radius);
+      padding:22px;border:1px solid var(--border);position:sticky;top:80px;
+    }
+    .aside-box h4{
+      font-size:15px;font-weight:700;margin-bottom:14px;
+      padding-bottom:10px;border-bottom:1px solid var(--border);
+    }
+    .aside-list{list-style:none}
+    .aside-list li{
+      padding:9px 0;border-bottom:1px dashed var(--border);
+      font-size:13px;color:var(--text2);display:flex;gap:8px;
+    }
+    .aside-list li:last-child{border-bottom:0}
+    .aside-list li::before{content:"→";color:var(--accent2);font-weight:700;flex-shrink:0}
+
+    /* guide */
+    .guide-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+    }
+    .guide-card{
+      background:var(--surface);border-radius:var(--radius);
+      padding:22px;border:1px solid var(--border);
+      transition:.2s;
+    }
+    .guide-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .guide-num{
+      font-size:28px;font-weight:800;color:var(--accent2);
+      line-height:1;margin-bottom:10px;opacity:.6;
+    }
+    .guide-card h3{font-size:15px;font-weight:700;margin-bottom:6px}
+    .guide-card p{font-size:13px;color:var(--text2);line-height:1.8}
+
+    /* faq */
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .faq-item{
+      background:var(--surface);border-radius:var(--radius-sm);
+      padding:20px;border:1px solid var(--border);
+      transition:.18s;
+    }
+    .faq-item:hover{border-color:var(--accent2)}
+    .faq-item h3{
+      font-size:14.5px;font-weight:700;margin-bottom:8px;
+      display:flex;gap:8px;align-items:flex-start;
+    }
+    .faq-item h3::before{
+      content:"Q";flex-shrink:0;width:20px;height:20px;
+      border-radius:6px;background:var(--accent);
+      color:#fff;font-size:11px;font-weight:700;
+      display:flex;align-items:center;justify-content:center;
+      margin-top:2px;
+    }
+    .faq-item p{font-size:13px;color:var(--text2);line-height:1.8;padding-left:28px}
+
+    /* comments */
+    .comment-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .comment-item{
+      background:var(--surface);border-radius:var(--radius-sm);
+      padding:16px;border:1px solid var(--border);
+    }
+    .comment-head{
+      display:flex;align-items:center;gap:8px;margin-bottom:8px;
+    }
+    .avatar{
+      width:30px;height:30px;border-radius:50%;
+      background:linear-gradient(135deg,var(--accent2),var(--accent3));
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-size:12px;font-weight:700;flex-shrink:0;
+    }
+    .comment-user{font-size:13px;font-weight:600}
+    .comment-date{font-size:11px;color:var(--text3);margin-left:auto}
+    .comment-text{font-size:13px;color:var(--text2);line-height:1.75}
+    .comment-text em{font-style:normal;color:var(--accent);font-weight:600}
+
+    /* news */
+    .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .news-card{
+      background:var(--surface);border-radius:var(--radius);
+      padding:20px;border:1px solid var(--border);
+      transition:.2s;display:flex;flex-direction:column;
+    }
+    .news-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+    .news-date{
+      font-size:11px;color:var(--accent);font-weight:600;
+      margin-bottom:8px;letter-spacing:.3px;
+    }
+    .news-card h3{font-size:14.5px;font-weight:700;margin-bottom:8px;line-height:1.5}
+    .news-card p{font-size:12.5px;color:var(--text2);line-height:1.75;flex:1}
+
+    /* footer */
+    footer{
+      background:#2d2a26;color:#b8b2ab;padding:48px 0 28px;
+      font-size:13px;
+    }
+    .footer-grid{
+      display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;
+      margin-bottom:32px;
+    }
+    .footer-brand{font-size:17px;font-weight:800;color:#fff;margin-bottom:10px}
+    .footer-brand span{color:var(--accent2)}
+    .footer-desc{font-size:12.5px;line-height:1.8;color:#9e9892}
+    .footer-col h4{font-size:13px;font-weight:700;color:#e8e2db;margin-bottom:12px}
+    .footer-col a{display:block;font-size:12.5px;color:#9e9892;padding:3px 0;transition:.15s}
+    .footer-col a:hover{color:var(--accent2)}
+    .footer-bottom{
+      border-top:1px solid #3d3934;padding-top:20px;
+      font-size:12px;color:#7a746e;line-height:1.8;
+    }
+
+    /* responsive */
+    @media(max-width:900px){
+      .card-grid{grid-template-columns:repeat(2,1fr)}
+      .intro-grid{grid-template-columns:1fr}
+      .analysis-grid{grid-template-columns:1fr}
+      .cat-grid{grid-template-columns:repeat(2,1fr)}
+      .guide-grid{grid-template-columns:1fr}
+      .faq-grid{grid-template-columns:1fr}
+      .comment-list{grid-template-columns:1fr}
+      .news-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .aside-box{position:static}
+      .update-list{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      .card-grid{grid-template-columns:1fr}
+      .cat-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .banner{padding:36px 0 30px}
+      .nav-links{gap:0}
+      .nav-links a{padding:5px 8px;font-size:12.5px}
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="/#top" class="logo"><span class="logo-mark">黄</span>黄果短剧</a>
+    <nav class="nav-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#cats">类型分类</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#guide">追剧指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <a href="/#hot" class="nav-cta">开始追剧</a>
+  </div>
+</header>
+
+<section class="banner" id="top">
+  <div class="wrap banner-inner">
+    <span class="banner-tag">🔥 短剧专题 · 持续更新中</span>
+    <h1>黄果短剧：<em>热门微短剧推荐</em>与追剧指南</h1>
+    <p class="banner-desc">
+      黄果短剧专题页为你梳理当下值得追的微短剧，从类型节奏、人物设定到爽点分布，一页看懂热门短剧的消费逻辑。无论你是通勤路上刷几集，还是周末一次性追完，这里都有适合你的推荐。
+    </p>
+    <div class="search-box">
+      <input type="text" placeholder="搜索短剧名称、类型或关键词…" aria-label="搜索黄果短剧">
+      <button type="button">搜索</button>
+    </div>
+    <div class="banner-btns">
+      <a href="/#hot">热播榜单</a>
+      <a href="/#updates">今日更新</a>
+      <a href="/#guide">新手入门</a>
+      <a href="/#analysis">类型解析</a>
+      <a href="/#comments">用户口碑</a>
+      <a href="/#news">行业动态</a>
+      <a href="/#faq">常见疑问</a>
+      <a href="/#cats">分类导航</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧内容简介</h2>
+      <span class="sub">了解这个专题能帮你解决什么问题</span>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text">
+        <p><strong>黄果短剧</strong>专题页面向的是对微短剧有消费需求、但又不希望在海量内容里盲目试错的观众。短剧这个品类发展很快，每集两三分钟，节奏紧凑，爽点密集，但同时也意味着质量参差不齐。很多人打开平台刷半天，最后只看了几部开头就放弃，时间成本并不低。</p>
+        <p>我们做的事情很简单：把<strong>黄果短剧</strong>相关的热门推荐、类型分类、更新动态和用户真实反馈集中到一页，让你在几分钟内建立起对当前短剧内容的基本判断。你可以先看深度解析了解类型特点，再对照热门推荐挑选感兴趣的几部，最后翻翻评论看看真实观众怎么说。</p>
+        <p>适合人群很明确：通勤路上喜欢刷几集的上班族、周末想找部短剧一次看完的学生党、对特定题材（甜宠、逆袭、悬疑、古风）有偏好的类型观众，以及想了解短剧行业在发生什么的内容从业者。页面会持续更新，收藏后每次回来都能看到新的推荐和动态。</p>
+        <p>为什么值得收藏？因为短剧的消费决策和长剧不同——你不需要追几个月，往往一个晚上就能看完一部。所以“选对下一部”比“深度研究某一部”更关键。<strong>黄果短剧</strong>专题的定位就是帮你在最短时间内找到下一部值得点开的短剧。</p>
+      </div>
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">收录短剧条目</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">8</div>
+          <div class="stat-label">类型分类维度</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">每日</div>
+          <div class="stat-label">更新动态追踪</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">真实</div>
+          <div class="stat-label">用户评论反馈</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>热门短剧推荐</h2>
+      <span class="sub">近期讨论度较高的黄果短剧内容</span>
+      <a href="/#updates" class="more">查看全部 →</a>
+    </div>
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card-cover c1"><span class="tag">热播中</span></div>
+        <div class="card-body">
+          <h3>限时心动</h3>
+          <div class="card-tags"><span>甜宠</span><span>契约恋爱</span><span>都市</span></div>
+          <p class="card-desc">一场临时合约引发的同居日常，节奏轻快，前六集就把人物关系立住，适合喜欢轻松甜向的观众。</p>
+          <div class="card-meta"><span>更新至 18 集</span><strong>热度 9.2</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c2"><span class="tag">完结</span></div>
+        <div class="card-body">
+          <h3>重回九零她先富</h3>
+          <div class="card-tags"><span>年代</span><span>逆袭</span><span>女性成长</span></div>
+          <p class="card-desc">重生回九十年代，靠小生意一步步翻盘。爽点密集，台词接地气，年代氛围还原得不错。</p>
+          <div class="card-meta"><span>全 24 集</span><strong>热度 8.9</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c3"><span class="tag">悬疑</span></div>
+        <div class="card-body">
+          <h3>第七通电话</h3>
+          <div class="card-tags"><span>悬疑</span><span>反转</span><span>短平快</span></div>
+          <p class="card-desc">一通深夜来电牵出旧案，每集结尾留钩子，追起来停不下来。适合喜欢强情节的观众。</p>
+          <div class="card-meta"><span>更新至 12 集</span><strong>热度 9.0</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c4"><span class="tag">古风</span></div>
+        <div class="card-body">
+          <h3>长安小厨娘</h3>
+          <div class="card-tags"><span>古风</span><span>美食</span><span>轻喜剧</span></div>
+          <p class="card-desc">市井小厨娘凭手艺闯荡长安，美食镜头拍得认真，感情线慢慢铺，适合下饭看。</p>
+          <div class="card-meta"><span>更新至 15 集</span><strong>热度 8.6</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c5"><span class="tag">逆袭</span></div>
+        <div class="card-body">
+          <h3>我的老板是甲方</h3>
+          <div class="card-tags"><span>职场</span><span>逆袭</span><span>爽剧</span></div>
+          <p class="card-desc">小职员意外翻身成为项目主导，职场反杀桥段设计得挺有代入感，节奏干脆。</p>
+          <div class="card-meta"><span>全 20 集</span><strong>热度 8.7</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c6"><span class="tag">新上线</span></div>
+        <div class="card-body">
+          <h3>合租请签收</h3>
+          <div class="card-tags"><span>轻喜</span><span>合租</span><span>日常</span></div>
+          <p class="card-desc">四个年轻人的合租故事，笑点自然，人物各有小毛病，反而显得真实可爱。</p>
+          <div class="card-meta"><span>更新至 8 集</span><strong>热度 8.4</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c7"><span class="tag">口碑</span></div>
+        <div class="card-body">
+          <h3>山那边的信</h3>
+          <div class="card-tags"><span>温情</span><span>乡村</span><span>现实题材</span></div>
+          <p class="card-desc">支教老师与山里孩子的故事，情感克制不煽情，在短剧里算是比较少见的题材选择。</p>
+          <div class="card-meta"><span>全 16 集</span><strong>评分 9.1</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c8"><span class="tag">热播</span></div>
+        <div class="card-body">
+          <h3>退婚后我成了大佬</h3>
+          <div class="card-tags"><span>爽文</span><span>反转</span><span>都市</span></div>
+          <p class="card-desc">经典退婚流开局，但女主成长线写得比预期扎实，反派智商在线，看着不憋屈。</p>
+          <div class="card-meta"><span>更新至 22 集</span><strong>热度 8.8</strong></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c9"><span class="tag">奇幻</span></div>
+        <div class="card-body">
+          <h3>交换人生七日</h3>
+          <div class="card-tags"><span>奇幻</span><span>身份互换</span><span>治愈</span></div>
+          <p class="card-desc">七天身份互换的设定不算新，但两个主角的细节表演加分，结尾收得也温柔。</p>
+          <div class="card-meta"><span>全 12 集</span><strong>热度 8.3</strong></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="updates">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>最新更新与热播动态</h2>
+      <span class="sub">2026年11月7日 追踪</span>
+    </div>
+    <div class="update-list">
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>限时心动</strong><p>第18集上线，同居线进入关键转折，评论区讨论热烈。</p></div>
+        <span class="update-time">今日 10:20</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>第七通电话</strong><p>第12集更新，本集结尾反转引发大量猜测。</p></div>
+        <span class="update-time">今日 09:45</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>合租请签收</strong><p>新剧上线，首更8集，轻喜剧风格适合下饭。</p></div>
+        <span class="update-time">今日 08:30</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>长安小厨娘</strong><p>第15集更新，美食线回归，感情线推进缓慢。</p></div>
+        <span class="update-time">昨日 20:10</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>我的老板是甲方</strong><p>完结撒花，全20集已更新完毕，适合一次性追完。</p></div>
+        <span class="update-time">昨日 18:00</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>退婚后我成了大佬</strong><p>第22集更新，女主事业线进入新阶段。</p></div>
+        <span class="update-time">昨日 15:40</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>山那边的信</strong><p>口碑持续发酵，完整16集已上线，适合慢节奏观众。</p></div>
+        <span class="update-time">11月5日</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>交换人生七日</strong><p>全12集已完结，短小精悍，一个晚上就能看完。</p></div>
+        <span class="update-time">11月4日</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>重回九零她先富</strong><p>完结后热度不减，年代逆袭题材讨论度回升。</p></div>
+        <span class="update-time">11月3日</span>
+      </div>
+      <div class="update-item">
+        <span class="update-dot"></span>
+        <div class="update-content"><strong>平台短剧专区</strong><p>本周新增多部短剧上线，类型覆盖甜宠、悬疑与古风。</p></div>
+        <span class="update-time">11月2日</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cats">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>短剧类型分类</h2>
+      <span class="sub">按题材快速找到想看的方向</span>
+    </div>
+    <div class="cat-grid">
+      <a href="/#hot" class="cat-item"><span class="cat-icon">💕</span><span>甜宠恋爱</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">⚡</span><span>逆袭爽剧</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">🔍</span><span>悬疑反转</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">🏮</span><span>古风传奇</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">🏙️</span><span>都市职场</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">📺</span><span>年代情感</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">🌿</span><span>温情现实</span></a>
+      <a href="/#hot" class="cat-item"><span class="cat-icon">✨</span><span>奇幻脑洞</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="analysis">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>黄果短剧深度解析</h2>
+      <span class="sub">类型特点、节奏与消费体验</span>
+    </div>
+    <div class="analysis-grid">
+      <div class="analysis-text">
+        <h3>短剧这个品类到底在看什么</h3>
+        <p>说起<strong>黄果短剧</strong>，很多人的第一反应是“节奏快”。这没错，但节奏快本身不是目的。短剧真正吸引人的地方，是在极短的单集时长里把情绪浓度拉满——前三十秒抛出冲突，两分钟内完成一次小反转，每集结尾再留一个让你想点下一集的钩子。这种结构决定了它和长剧的消费方式完全不同：长剧看的是人物弧光和世界观的铺陈，短剧看的是情绪效率和爽点密度。</p>
+        <p>从<strong>黄果短剧</strong>的类型分布来看，甜宠和逆袭是两大主力。甜宠靠的是关系推进的节奏感，契约恋爱、合租同居、欢喜冤家这些经典框架之所以反复出现，是因为它们能在很短的篇幅里制造足够的互动密度。逆袭则靠“憋屈—翻身”的情绪落差，退婚流、重生流、职场反杀都是这个逻辑的变体。理解了这个底层结构，你挑选短剧时就有了判断基准：先看它属于哪类情绪供给，再看它的节奏是否抓人。</p>
+        <h3>人物设定与表演的取舍</h3>
+        <p>短剧没有太多时间做人物前史，所以主角往往一出场就带着鲜明的标签。这既是限制也是特点。<strong>黄果短剧</strong>里表现较好的作品，通常能在标签之外给人物加一两笔细节——比如一个小动作、一句口头禅、一个反复出现的物件，让人物不至于完全扁平。表演上，短剧对演员的要求其实不低，因为情绪切换频繁，爆发戏和日常戏要快速衔接，稍不到位就会显得浮夸。</p>
+        <p>另外，短剧的配角往往承担着推进节奏的功能，反派要“坏得有效率”，助攻要“来得及时”。这也是为什么看短剧时，配角的合理性会直接影响观感——反派太蠢会削弱爽感，助攻太刻意会显得生硬。</p>
+        <h3>节奏之外的画面与制作</h3>
+        <p>早几年的短剧制作普遍粗糙，但这两年明显在提升。像<strong>黄果短剧</strong>专题里收录的一些作品，在场景选择、灯光和构图上都开始讲究了。古风题材尤其吃画面，服装和置景一旦糊弄，观感会大打折扣；都市题材则更依赖镜头语言来传递情绪，比如用特写压缩空间感来制造紧张。这些制作层面的差异，往往是区分“能看”和“好看”的关键。</p>
+        <h3>适合谁看，怎么选</h3>
+        <p>如果你只有碎片时间，优先选单集短、更新稳定的甜宠或轻喜剧；如果你想一次看完，完结的悬疑或逆袭题材更合适；如果你对情感浓度要求高、不太在意设定新颖度，温情现实类值得试试。<strong>黄果短剧</strong>的价值就在于把不同类型放在一起对照，让你不用每家平台翻一遍就能做出判断。搜索这个词的人，往往就是想知道“最近有什么值得看的短剧”，这个专题页就是为这个需求准备的。</p>
+      </div>
+      <aside class="aside-box">
+        <h4>快速挑选建议</h4>
+        <ul class="aside-list">
+          <li>碎片时间优先选单集2-3分钟的轻喜剧</li>
+          <li>想一次看完优先选已完结作品</li>
+          <li>悬疑题材注意看是否留坑未填</li>
+          <li>古风题材先看置景和服化水平</li>
+          <li>甜宠看关系推进节奏是否自然</li>
+          <li>逆袭看反派智商是否在线</li>
+          <li>温情现实类适合慢节奏观众</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>追剧体验指南</h2>
+      <span class="sub">怎么用这个专题页更顺手</span>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <div class="guide-num">01</div>
+        <h3>先看分类再看推荐</h3>
+        <p>如果你已经有明确的类型偏好，直接从类型分类进入更快。没有偏好的话，按热门推荐的顺序往下看，基本能覆盖当前主流选择。</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">02</div>
+        <h3>关注更新状态</h3>
+        <p>短剧更新节奏差异很大，有的日更，有的周更。卡片上会标注更新进度，追更前先确认是否在连载，避免看到一半断档。</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">03</div>
+        <h3>结合评论做判断</h3>
+        <p>用户评论模块里的反馈比官方简介更直接。关注那些提到具体情节的评论，通常比笼统的“好看”更有参考价值。</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">04</div>
+        <h3>移动端阅读友好</h3>
+        <p>页面做了响应式适配，手机上浏览卡片和列表都不会拥挤。通勤路上打开也能快速扫完一屏信息。</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">05</div>
+        <h3>收藏后定期回看</h3>
+        <p>短剧内容更新快，收藏这个页面后每隔几天回来看一次，就能跟上最新的推荐和动态，不用反复搜索。</p>
+      </div>
+      <div class="guide-card">
+        <div class="guide-num">06</div>
+        <h3>按需扩展浏览路径</h3>
+        <p>每部推荐都关联了类型标签和简要看点，顺着标签可以找到同类作品，比漫无目的地刷更有效率。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>常见问题</h2>
+      <span class="sub">关于黄果短剧你可能想知道的</span>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>黄果短剧主要是什么类型的短剧？</h3>
+        <p>以甜宠、逆袭、都市和古风为主，同时也有悬疑和温情现实题材。整体偏向情绪浓度高、节奏紧凑的内容，适合碎片时间观看。专题页按类型做了分类，方便按偏好筛选。</p>
+      </div>
+      <div class="faq-item">
+        <h3>第一次看短剧，推荐从哪部开始？</h3>
+        <p>建议从完结、口碑稳定的轻喜剧或甜宠入手，比如《合租请签收》或《限时心动》前几集。这类作品门槛低，节奏友好，能帮你快速适应短剧的叙事方式，再决定要不要尝试悬疑或逆袭类型。</p>
+      </div>
+      <div class="faq-item">
+        <h3>短剧一般多少集，每集多长？</h3>
+        <p>常见的是每集2到3分钟，全剧12到24集不等，一个晚上基本能看完一部。也有部分作品单集稍长、集数较少。页面上的更新状态会标注当前进度，追更前可以留意。</p>
+      </div>
+      <div class="faq-item">
+        <h3>为什么有些短剧看起来制作比较粗糙？</h3>
+        <p>短剧制作周期短、成本差异大，确实存在参差不齐的情况。建议优先选择画面、置景和表演反馈较好的作品，专题页的推荐和评论可以作为参考，避免在制作水平明显不足的内容上浪费时间。</p>
+      </div>
+      <div class="faq-item">
+        <h3>黄果短剧的更新频率怎么样？</h3>
+        <p>整体更新节奏较快，热门作品多为日更或隔日更。专题页的最新更新模块会持续追踪上线动态，关注这一栏就能掌握主要作品的最新进度，不需要逐个平台确认。</p>
+      </div>
+      <div class="faq-item">
+        <h3>有没有类似黄果短剧的推荐方向？</h3>
+        <p>如果你喜欢甜宠，可以关注契约恋爱和合租题材；喜欢逆袭就看退婚流和重生流；喜欢强情节可以尝试悬疑反转类。页面里的类型分类和同类标签都提供了扩展入口，顺着看能找到不少相近选择。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comments">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>用户评论</h2>
+      <span class="sub">近30天真实反馈摘录</span>
+    </div>
+    <div class="comment-list">
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">小</span><span class="comment-user">小鹿乱撞</span><span class="comment-date">11月6日</span></div>
+        <p class="comment-text">《限时心动》前六集真的抓人，节奏太舒服了，但后面几集稍微有点拖，<em>希望感情线别崩</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">追</span><span class="comment-user">追剧不睡觉</span><span class="comment-date">11月5日</span></div>
+        <p class="comment-text">《第七通电话》每集结尾都好会留钩子，昨晚一口气看到12集，<em>今天顶着黑眼圈上班</em>，值了。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">橘</span><span class="comment-user">橘子汽水</span><span class="comment-date">11月5日</span></div>
+        <p class="comment-text">《长安小厨娘》美食镜头拍得真不错，就是感情线太慢了，<em>想快进又舍不得</em>，纠结。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">老</span><span class="comment-user">老猫不熬夜</span><span class="comment-date">11月4日</span></div>
+        <p class="comment-text">年代逆袭那部《重回九零她先富》比我预期好看，台词不悬浮，<em>小生意那段挺有细节</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">阿</span><span class="comment-user">阿茶</span><span class="comment-date">11月4日</span></div>
+        <p class="comment-text">《退婚后我成了大佬》反派智商在线这点好评，很多同类剧反派太蠢了看着生气，这部还算合理。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">路</span><span class="comment-user">路过看看</span><span class="comment-date">11月3日</span></div>
+        <p class="comment-text">《山那边的信》在短剧里算清流了，不煽情但看得心里暖暖的，<em>适合安静的时候看</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">月</span><span class="comment-user">月半弯</span><span class="comment-date">11月3日</span></div>
+        <p class="comment-text">《合租请签收》笑点挺自然的，四个人各有小毛病这点很真实，就是更新太慢了，<em>求加更</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">咔</span><span class="comment-user">咔咔</span><span class="comment-date">11月2日</span></div>
+        <p class="comment-text">《交换人生七日》设定不算新，但两个演员的细节处理加分，结尾收得温柔，<em>短小精悍推荐</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">沉</span><span class="comment-user">沉默的观众</span><span class="comment-date">11月2日</span></div>
+        <p class="comment-text">《我的老板是甲方》职场反杀那段有点爽，但整体套路感偏重，<em>下饭可以，别期待太高</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">芒</span><span class="comment-user">芒果布丁</span><span class="comment-date">11月1日</span></div>
+        <p class="comment-text">最近短剧质量确实在提升，画面和表演都比以前讲究了，<em>黄果短剧</em>这个专题的推荐还算靠谱。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">风</span><span class="comment-user">风铃</span><span class="comment-date">10月31日</span></div>
+        <p class="comment-text">有没有人觉得《限时心动》女二比女主还讨喜，演技挺自然的，希望后面别黑化。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">半</span><span class="comment-user">半糖去冰</span><span class="comment-date">10月30日</span></div>
+        <p class="comment-text">短剧看多了发现套路都差不多，<em>现在主要看演员和制作</em>，同样的剧情演得好就是不一样。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">夜</span><span class="comment-user">夜航船</span><span class="comment-date">10月29日</span></div>
+        <p class="comment-text">《第七通电话》希望结局能圆回来，短剧悬疑最怕挖坑不填，目前看线索铺得还算有章法。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">小</span><span class="comment-user">小透明</span><span class="comment-date">10月28日</span></div>
+        <p class="comment-text">通勤路上刷短剧真的效率高，一集两分钟，一部剧一个来回地铁就看完一半，<em>时间管理神器</em>。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">暖</span><span class="comment-user">暖阳</span><span class="comment-date">10月27日</span></div>
+        <p class="comment-text">希望专题页多推一点温情现实类的，甜宠逆袭虽然多，但偶尔也想看点安静的。</p>
+      </div>
+      <div class="comment-item">
+        <div class="comment-head"><span class="avatar">大</span><span class="comment-user">大橙子</span><span class="comment-date">10月26日</span></div>
+        <p class="comment-text">《重回九零她先富》结尾稍微有点仓促，不过整体完成度在短剧里算高的，<em>值得一看</em>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>相关资讯</h2>
+      <span class="sub">短剧行业与内容动态</span>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-date">2026年11月6日</div>
+        <h3>短剧题材持续细分，温情现实类关注度上升</h3>
+        <p>近期短剧市场中，温情与现实题材的讨论度有所提升，观众对“安静一点”的内容需求在增加，平台侧也开始增加相关推荐位。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026年11月4日</div>
+        <h3>黄果短剧推荐机制更新，类型标签更细化</h3>
+        <p>专题页对短剧的类型标签做了进一步细化，甜宠、逆袭、悬疑等大类下增设了更具体的描述，方便按偏好快速定位。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026年11月2日</div>
+        <h3>短剧单集时长呈现分化趋势</h3>
+        <p>部分短剧尝试将单集时长压缩到两分钟以内，以适配更碎片化的观看场景；也有作品适度加长，追求更完整的情节铺陈。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026年10月30日</div>
+        <h3>悬疑短剧迎来一波上线小高峰</h3>
+        <p>多部悬疑题材短剧近期集中上线，反转设计和节奏把控成为观众讨论焦点，评论区对结局完成度的要求明显提高。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026年10月28日</div>
+        <h3>古风短剧制作水平整体提升</h3>
+        <p>古风题材在服化道和置景上的投入明显增加，画面质感成为观众选择的重要参考，制作精良的作品更容易获得口碑传播。</p>
+      </article>
+      <article class="news-card">
+        <div class="news-date">2026年10月25日</div>
+        <h3>短剧观众更看重更新稳定性</h3>
+        <p>用户反馈显示，更新节奏是否稳定直接影响追更意愿，断更和拖更成为评论区提及较多的问题，完结作品因此更受一次性观看人群欢迎。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">黄果<span>短剧</span></div>
+        <p class="footer-desc">专注短剧内容推荐与类型解析，帮你快速找到下一部值得点开的热门短剧。页面内容持续更新，欢迎收藏关注。</p>
+      </div>
+      <div class="footer-col">
+        <h4>热门内容</h4>
+        <a href="/#hot">甜宠推荐</a>
+        <a href="/#hot">逆袭爽剧</a>
+        <a href="/#hot">悬疑反转</a>
+        <a href="/#hot">古风传奇</a>
+      </div>
+      <div class="footer-col">
+        <h4>专题导航</h4>
+        <a href="/#updates">最新更新</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">追剧指南</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+      <div class="footer-col">
+        <h4>友情链接</h4>
+        <a href="#">资源站占位</a>
+        <a href="#">短剧社区占位</a>
+        <a href="#">行业观察占位</a>
+        <a href="#">合作联系占位</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 黄果短剧专题页 · 本页面内容为内容推荐与类型解析，仅供观众参考。短剧作品信息以各平台实际发布为准。</p>
+      <p style="margin-top:6px">免责声明：页面中涉及的短剧名称、更新状态及用户评论均为内容展示用途，不构成任何购买或观看建议。如有内容相关问题请联系处理。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+        </html>
