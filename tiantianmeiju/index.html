@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>天天美剧-美剧在线观看与追剧推荐_美剧排行榜_美剧更新日历</title>
+<meta name="description" content="天天美剧是美剧爱好者追剧参考站，提供天天美剧热门剧集推荐、美剧排行榜、最新更新动态、剧集类型解析与追剧日历，涵盖悬疑、科幻、犯罪、喜剧等题材，帮助你看懂剧集看点并找到下一部要追的美剧。">
+<meta name="keywords" content="天天美剧,美剧推荐,美剧排行榜,美剧追剧,美剧更新日历">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314111f'/%3E%3Cpath d='M20 18h24v6H26v6h16v6H26v12h-6z' fill='%23f0b429'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0e0c16;
+  --bg-soft:#151222;
+  --card:#1b1730;
+  --card-2:#221c3a;
+  --line:rgba(255,255,255,.08);
+  --txt:#ece9f7;
+  --txt-2:#a9a3c4;
+  --gold:#f0b429;
+  --neon:#8b6cff;
+  --neon-2:#ff5fa2;
+  --cyan:#3fe0d0;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(1200px 500px at 12% -10%, rgba(139,108,255,.22), transparent 60%),
+    radial-gradient(900px 420px at 88% 0%, rgba(255,95,162,.14), transparent 60%),
+    var(--bg);
+  color:var(--txt);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.sec{margin:54px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h2{
+  font-size:23px;letter-spacing:.5px;position:relative;padding-left:14px;line-height:1.3;
+}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;border-radius:4px;
+  background:linear-gradient(180deg,var(--gold),var(--neon-2));
+}
+.sec-head .sub{color:var(--txt-2);font-size:13.5px}
+.more-link{color:var(--gold);font-size:13.5px;border:1px solid rgba(240,180,41,.4);padding:5px 14px;border-radius:999px;transition:.25s}
+.more-link:hover{background:rgba(240,180,41,.12);transform:translateY(-1px)}
+
+/* 导航 */
+.topnav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,12,22,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:19px;letter-spacing:.5px;white-space:nowrap}
+.logo .mark{
+  width:32px;height:32px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--gold),var(--neon-2));
+  color:#160f24;font-weight:900;font-size:16px;
+}
+.logo em{font-style:normal;color:var(--gold)}
+.nav-links{display:flex;gap:18px;flex:1;overflow:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-size:14px;color:var(--txt-2);white-space:nowrap;padding:4px 2px;border-bottom:2px solid transparent;transition:.2s}
+.nav-links a:hover{color:var(--txt);border-bottom-color:var(--neon)}
+.nav-cta{
+  font-size:13.5px;padding:8px 18px;border-radius:999px;white-space:nowrap;
+  background:linear-gradient(135deg,var(--neon),var(--neon-2));color:#fff;font-weight:600;
+  box-shadow:0 6px 18px rgba(139,108,255,.35);transition:.25s;
+}
+.nav-cta:hover{transform:translateY(-2px)}
+
+/* Banner */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  padding:54px 0 46px;
+}
+.hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(139,108,255,.35),transparent 68%);filter:blur(10px);
+}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:38px;line-height:1.28;letter-spacing:.5px;margin-bottom:16px}
+.hero h1 span{
+  background:linear-gradient(120deg,var(--gold),var(--neon-2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{color:var(--txt-2);font-size:15.5px;margin-bottom:8px;max-width:640px}
+.hero .tags{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0 22px}
+.hero .tags span{
+  font-size:12.5px;color:var(--gold);border:1px solid rgba(240,180,41,.35);
+  background:rgba(240,180,41,.07);padding:4px 12px;border-radius:999px;
+}
+.searchbar{display:flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px;max-width:520px;box-shadow:var(--shadow)}
+.searchbar input{flex:1;background:transparent;border:0;outline:0;color:var(--txt);padding:10px 16px;font-size:14px}
+.searchbar input::placeholder{color:#6d668c}
+.searchbar button{
+  border:0;cursor:pointer;padding:10px 24px;border-radius:999px;font-size:14px;font-weight:600;
+  background:linear-gradient(135deg,var(--neon),var(--neon-2));color:#fff;transition:.25s;
+}
+.searchbar button:hover{filter:brightness(1.1)}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hero-btns a{
+  font-size:13.5px;padding:8px 16px;border-radius:10px;background:var(--card);border:1px solid var(--line);
+  color:var(--txt-2);transition:.25s;
+}
+.hero-btns a:hover{color:var(--gold);border-color:rgba(240,180,41,.5);transform:translateY(-2px)}
+.hero-cover{
+  border-radius:22px;overflow:hidden;position:relative;aspect-ratio:4/3;
+  background:
+    radial-gradient(circle at 30% 25%,rgba(240,180,41,.55),transparent 55%),
+    radial-gradient(circle at 78% 70%,rgba(139,108,255,.65),transparent 58%),
+    linear-gradient(150deg,#241a3f,#120f1e);
+  border:1px solid var(--line);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;
+}
+.hero-cover .badge{font-size:12px;color:#160f24;background:var(--gold);display:inline-block;padding:3px 10px;border-radius:6px;font-weight:700;align-self:flex-start;margin-bottom:auto}
+.hero-cover b{font-size:20px;display:block;margin-bottom:6px}
+.hero-cover small{color:var(--txt-2);font-size:12.5px}
+
+/* 内容简介 */
+.intro-box{
+  background:linear-gradient(180deg,var(--card),var(--bg-soft));
+  border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px;box-shadow:var(--shadow);
+}
+.intro-box p{color:#c9c4de;margin-bottom:14px}
+.intro-box p:last-child{margin-bottom:0}
+.intro-box strong{color:var(--gold)}
+
+/* 卡片网格 */
+.grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;transition:.28s;display:flex;flex-direction:column;gap:10px;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(139,108,255,.45);box-shadow:0 14px 34px rgba(0,0,0,.4)}
+.card .poster{
+  height:110px;border-radius:12px;margin-bottom:4px;position:relative;overflow:hidden;
+  display:flex;align-items:flex-end;padding:12px;font-weight:700;font-size:15px;
+  background:linear-gradient(135deg,#2b2148,#1a1530);
+}
+.card:nth-child(3n+1) .poster{background:linear-gradient(135deg,#3a2350,#1b1630)}
+.card:nth-child(3n+2) .poster{background:linear-gradient(135deg,#1e2b4d,#161a2c)}
+.card:nth-child(3n+3) .poster{background:linear-gradient(135deg,#42243c,#1c1424)}
+.card .poster::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.14),transparent 60%)}
+.card .poster span{position:relative;z-index:2}
+.card .meta{display:flex;gap:8px;flex-wrap:wrap;font-size:12px}
+.card .meta i{
+  font-style:normal;color:var(--cyan);border:1px solid rgba(63,224,208,.35);
+  background:rgba(63,224,208,.07);padding:2px 9px;border-radius:6px;
+}
+.card .meta i.k2{color:var(--neon-2);border-color:rgba(255,95,162,.35);background:rgba(255,95,162,.07)}
+.card .meta i.k3{color:var(--gold);border-color:rgba(240,180,41,.35);background:rgba(240,180,41,.07)}
+.card p.desc{font-size:13.5px;color:var(--txt-2);flex:1}
+.card .info{display:flex;justify-content:space-between;font-size:12.5px;color:#7f7899;border-top:1px solid var(--line);padding-top:10px}
+.card .info b{color:var(--gold);font-weight:600}
+
+/* 更新列表 */
+.update-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.upd{
+  display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;transition:.25s;
+}
+.upd:hover{background:var(--card-2);transform:translateX(3px)}
+.upd .dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);margin-top:9px;flex:none;box-shadow:0 0 0 4px rgba(63,224,208,.15)}
+.upd h4{font-size:14.5px;margin-bottom:3px}
+.upd p{font-size:13px;color:var(--txt-2)}
+.upd time{font-size:12px;color:#756e91;margin-left:auto;white-space:nowrap;align-self:flex-start}
+
+/* 分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{
+  display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;
+  background:linear-gradient(135deg,var(--card),var(--bg-soft));border:1px solid var(--line);transition:.25s;
+}
+.cat:hover{border-color:rgba(240,180,41,.5);transform:translateY(-3px)}
+.cat .ico{
+  width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:15px;font-weight:800;
+  background:rgba(139,108,255,.18);color:var(--neon);flex:none;
+}
+.cat b{display:block;font-size:14.5px}
+.cat small{color:var(--txt-2);font-size:12px}
+
+/* 正文解析 */
+.article-box{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 36px;
+  box-shadow:var(--shadow);
+}
+.article-box h3{font-size:18px;margin:26px 0 12px;color:var(--gold);letter-spacing:.3px}
+.article-box h3:first-child{margin-top:0}
+.article-box p{color:#c6c1da;margin-bottom:14px;text-align:justify}
+.article-box ul{margin:0 0 16px 20px;color:#c6c1da}
+.article-box li{margin-bottom:8px}
+.article-box .hl{color:var(--neon-2);font-weight:600}
+
+/* 体验指南 */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.guide{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:.25s;
+}
+.guide:hover{transform:translateY(-3px);border-color:rgba(63,224,208,.4)}
+.guide .num{font-size:26px;font-weight:800;color:rgba(139,108,255,.5);line-height:1;margin-bottom:10px}
+.guide h4{font-size:15.5px;margin-bottom:8px}
+.guide p{font-size:13.5px;color:var(--txt-2)}
+
+/* FAQ */
+.faq-list{display:grid;gap:12px}
+details.faq{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 20px;transition:.25s;
+}
+details.faq[open]{border-color:rgba(240,180,41,.4);background:var(--card-2)}
+details.faq summary{
+  cursor:pointer;list-style:none;padding:17px 0;font-size:15px;font-weight:600;display:flex;justify-content:space-between;gap:14px;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";color:var(--gold);font-size:19px;line-height:1;transition:.25s}
+details.faq[open] summary::after{transform:rotate(45deg)}
+details.faq p{padding:0 0 18px;color:var(--txt-2);font-size:14px}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cmt{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+}
+.cmt .top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cmt .av{
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#160f24;flex:none;
+  background:linear-gradient(135deg,var(--gold),var(--neon-2));
+}
+.cmt .name{font-size:13.5px;font-weight:600}
+.cmt .time{font-size:12px;color:#756e91;margin-left:auto}
+.cmt p{font-size:13.5px;color:var(--txt-2)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;transition:.25s;
+}
+.news:hover{transform:translateY(-3px);border-color:rgba(255,95,162,.4)}
+.news time{font-size:12px;color:var(--gold)}
+.news h4{font-size:15px;margin:8px 0 8px;line-height:1.5}
+.news p{font-size:13px;color:var(--txt-2)}
+
+/* 订阅 */
+.subscribe{
+  background:linear-gradient(135deg,rgba(139,108,255,.2),rgba(255,95,162,.12));
+  border:1px solid var(--line);border-radius:22px;padding:38px;text-align:center;
+}
+.subscribe h2{font-size:24px;margin-bottom:10px}
+.subscribe p{color:var(--txt-2);margin-bottom:20px}
+.sub-form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.sub-form input{
+  flex:1;min-width:220px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
+  padding:12px 16px;color:var(--txt);outline:0;font-size:14px;
+}
+.sub-form input::placeholder{color:#6d668c}
+.sub-form button{
+  border:0;cursor:pointer;padding:12px 26px;border-radius:10px;font-size:14px;font-weight:600;
+  background:linear-gradient(135deg,var(--gold),var(--neon-2));color:#160f24;
+}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:40px 0 30px;margin-top:60px;background:rgba(10,8,16,.6)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+.foot-grid h5{font-size:14px;margin-bottom:12px;color:var(--gold)}
+.foot-grid a{display:block;font-size:13px;color:var(--txt-2);margin-bottom:8px;transition:.2s}
+.foot-grid a:hover{color:var(--txt)}
+.foot-grid p{font-size:13px;color:var(--txt-2);line-height:1.8}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;font-size:12.5px;color:#6d668c;text-align:center;line-height:1.9}
+
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-cover{display:none}
+  .grid-cards{grid-template-columns:repeat(2,1fr)}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .guide-grid{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .article-box{padding:26px 22px}
+}
+@media(max-width:640px){
+  .hero h1{font-size:27px}
+  .grid-cards{grid-template-columns:1fr}
+  .update-list,.cmt-grid,.news-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .sec{margin:40px 0}
+  .nav-links{display:none}
+  .logo{font-size:17px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header class="topnav" id="top-nav">
+  <div class="wrap nav-inner">
+    <a href="/#top-nav" class="logo"><span class="mark">T</span>天天<em>美剧</em></a>
+    <nav class="nav-links">
+      <a href="/#hot-picks">热门推荐</a>
+      <a href="/#latest-update">最新更新</a>
+      <a href="/#cat-entry">分类入口</a>
+      <a href="/#deep-analysis">深度解析</a>
+      <a href="/#guide">追剧指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">剧集资讯</a>
+      <a href="/#comments">剧迷评论</a>
+    </nav>
+    <a href="/#subscribe" class="nav-cta">订阅追剧提醒</a>
+  </div>
+</header>
+
+<!-- 首屏 Banner -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>天天美剧：一站式<span>美剧追剧推荐</span>与更新追踪</h1>
+      <p class="lead">从悬疑犯罪到科幻奇想，从高分口碑剧到当季新番，天天美剧把值得追的美剧整理成清晰的推荐清单。</p>
+      <p class="lead">每天更新剧集动态、类型解析与追剧日历，帮你少踩雷、少纠结，快速锁定下一部要刷的剧。</p>
+      <div class="tags">
+        <span>悬疑犯罪</span><span>科幻奇想</span><span>高分口碑</span><span>当季新剧</span><span>经典补剧</span><span>追剧日历</span>
+      </div>
+      <form class="searchbar" onsubmit="return false">
+        <input type="text" placeholder="搜索剧名、题材或演员，例如：悬疑 高分 新剧">
+        <button type="button">搜美剧</button>
+      </form>
+      <div class="hero-btns">
+        <a href="/#hot-picks">热门推荐</a>
+        <a href="/#latest-update">最新更新</a>
+        <a href="/#cat-entry">类型分类</a>
+        <a href="/#deep-analysis">深度解析</a>
+        <a href="/#guide">追剧指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#news">剧集资讯</a>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <span class="badge">本周编辑精选</span>
+      <b>天天美剧 · 当季口碑榜</b>
+      <small>悬疑 / 科幻 / 犯罪 / 剧情 · 持续更新中</small>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <!-- 内容简介 -->
+  <section class="sec" id="intro">
+    <div class="sec-head">
+      <h2>天天美剧是什么：这个追剧参考页能给你什么</h2>
+      <span class="sub">内容定位 / 适用人群 / 浏览价值</span>
+    </div>
+    <div class="intro-box">
+      <p>天天美剧面向的是对美剧有持续消费需求的观众。很多人打开搜索框时，真正的需求并不是“随便看一部剧”，而是想知道<strong>最近有什么值得追的美剧</strong>、<strong>某部剧属于什么类型</strong>、<strong>更新节奏是否适合自己</strong>、<strong>和同类剧相比有什么差异</strong>。这个页面正是围绕这些高频问题组织内容的：把热门剧集、最新更新、类型分类、深度解析和常见疑问放在同一条浏览路径上，减少在多个页面之间来回跳转的成本。</p>
+      <p>天天美剧的内容覆盖比较广。喜欢强情节的观众可以重点关注悬疑、犯罪、律政类剧集；偏爱世界构建的观众会更容易被科幻、奇幻题材吸引；而想找轻松下饭剧的观众，则可以从喜剧、生活流、轻剧情方向入手。页面中的推荐卡片都标注了类型标签、看点摘要和更新状态，方便按自己的观看习惯做判断。</p>
+      <p>对刚接触美剧的观众来说，天天美剧的价值在于提供一条相对清晰的入门路径：先看类型介绍建立基本认知，再从推荐清单里挑一两部节奏友好的剧试水，最后通过常见问题和追剧指南了解更新规律与观看节奏。对老观众来说，这里更像一个信息汇总入口，用来快速确认当季新剧动态、口碑变化和值得回补的经典作品。</p>
+      <p>天天美剧的内容会围绕剧集本身展开，包括题材特征、人物关系、叙事节奏、制作水准和适合人群。收藏这个页面，后续更新时可以按分类快速回看，也可以把推荐卡片当作自己的追剧备选清单使用。</p>
+    </div>
+  </section>
+
+  <!-- 热门推荐 -->
+  <section class="sec" id="hot-picks">
+    <div class="sec-head">
+      <h2>天天美剧热门推荐：本周值得关注的剧集</h2>
+      <a class="more-link" href="/#latest-update">查看全部更新</a>
+    </div>
+    <div class="grid-cards">
+
+      <article class="card">
+        <div class="poster"><span>雾港档案</span></div>
+        <div class="meta"><i>悬疑</i><i class="k2">犯罪调查</i><i class="k3">高分</i></div>
+        <p class="desc">一桩旧案牵出整座港口城市的灰色链条，叙事采用双时间线交叉，前两集铺垫扎实，中段反转密集，适合喜欢慢热推理的观众。</p>
+        <div class="info"><span>评分 <b>9.1</b></span><span>更新至 S02E06</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>轨道之外</span></div>
+        <div class="meta"><i>科幻</i><i class="k2">太空生存</i><i class="k3">硬设定</i></div>
+        <p class="desc">空间站事故后的求生群像，科学细节相对克制，重点放在人际信任与资源分配上，画面冷色调质感突出，追起来有沉浸感。</p>
+        <div class="info"><span>评分 <b>8.7</b></span><span>更新至 S01E08</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>第七法庭</span></div>
+        <div class="meta"><i>律政</i><i class="k2">庭审博弈</i><i class="k3">单元剧</i></div>
+        <p class="desc">每集一个案件的律政剧，胜在台词锋利和庭审节奏，主线穿插律所内部权力斗争，适合喜欢对白密度高的观众。</p>
+        <div class="info"><span>评分 <b>8.9</b></span><span>更新至 S03E04</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>北纬四十七度</span></div>
+        <div class="meta"><i>剧情</i><i class="k2">小镇群像</i><i class="k3">治愈</i></div>
+        <p class="desc">小镇诊所医生与居民之间的日常故事，节奏舒缓，情绪处理细腻，适合下班后放松观看，属于越看越有味道的类型。</p>
+        <div class="info"><span>评分 <b>8.5</b></span><span>更新至 S01E10</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>暗室信号</span></div>
+        <div class="meta"><i>惊悚</i><i class="k2">心理悬疑</i><i class="k3">限制级</i></div>
+        <p class="desc">电台主播收到来历不明的求救信号，剧情在现实与幻觉之间来回切换，氛围营造是最大看点，不建议深夜独自观看。</p>
+        <div class="info"><span>评分 <b>8.3</b></span><span>更新至 S01E05</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>合租公寓404</span></div>
+        <div class="meta"><i>喜剧</i><i class="k2">都市生活</i><i class="k3">下饭</i></div>
+        <p class="desc">四个性格迥异的年轻人合租的故事，单集二十分钟左右，笑点密集且不依赖字幕梗，很适合碎片时间补剧。</p>
+        <div class="info"><span>评分 <b>8.2</b></span><span>更新至 S02E12</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>锈色边境</span></div>
+        <div class="meta"><i>犯罪</i><i class="k2">家族史诗</i><i class="k3">长线叙事</i></div>
+        <p class="desc">边境小镇两大家族的利益纠葛，人物众多但铺垫有序，前几集需要耐心，进入中段后张力明显上升。</p>
+        <div class="info"><span>评分 <b>8.8</b></span><span>更新至 S04E03</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>时间褶皱</span></div>
+        <div class="meta"><i>科幻</i><i class="k2">时间循环</i><i class="k3">烧脑</i></div>
+        <p class="desc">时间循环设定下的解谜故事，每集都会补充新的规则细节，适合喜欢边看边记线索的观众，建议连续观看。</p>
+        <div class="info"><span>评分 <b>8.6</b></span><span>更新至 S01E07</span></div>
+      </article>
+
+      <article class="card">
+        <div class="poster"><span>无声证人</span></div>
+        <div class="meta"><i>悬疑</i><i class="k2">法医推理</i><i class="k3">单元+主线</i></div>
+        <p class="desc">法医视角的推理剧，案件设计相对扎实，主线围绕主角身世展开，推理过程比结果更值得关注。</p>
+        <div class="info"><span>评分 <b>8.4</b></span><span>更新至 S02E09</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="sec" id="latest-update">
+    <div class="sec-head">
+      <h2>天天美剧最新更新与热播动态</h2>
+      <span class="sub">信息整理时间：2026年11月7日</span>
+    </div>
+    <div class="update-list">
+      <div class="upd"><span class="dot"></span><div><h4>雾港档案 S02E06</h4><p>新一集上线，旧案线索出现关键证人，剧情开始回收第一季埋下的伏笔。</p></div><time>11-07</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>轨道之外 S01E08</h4><p>本集聚焦氧气分配危机，主角团队内部第一次出现明显分歧。</p></div><time>11-07</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>第七法庭 S03E04</h4><p>庭审案件围绕一份被篡改的合同展开，律所内部人事变动同步推进。</p></div><time>11-06</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>时间褶皱 S01E07</h4><p>循环规则新增一条限制，主角开始尝试记录跨循环信息。</p></div><time>11-06</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>合租公寓404 S02E12</h4><p>季终集上线，合租关系迎来变化，结尾留出下一季悬念。</p></div><time>11-05</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>锈色边境 S04E03</h4><p>家族谈判破裂，边境执法线开始与主线交汇。</p></div><time>11-05</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>暗室信号 S01E05</h4><p>求救信号来源被部分解释，但新的疑点随之出现。</p></div><time>11-04</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>无声证人 S02E09</h4><p>法医团队接手一具身份不明的遗体，案件牵出多年前的失踪案。</p></div><time>11-04</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>北纬四十七度 S01E10</h4><p>小镇冬季来临，诊所迎来一批特殊病人，情绪线收束。</p></div><time>11-03</time></div>
+      <div class="upd"><span class="dot"></span><div><h4>新剧预告：午夜订正</h4><p>悬疑新剧确认上线档期，首季共八集，主打校园与失踪案双线。</p></div><time>11-03</time></div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="sec" id="cat-entry">
+    <div class="sec-head">
+      <h2>天天美剧类型分类入口</h2>
+      <span class="sub">按题材快速筛选</span>
+    </div>
+    <div class="cat-grid">
+      <div class="cat"><div class="ico">悬</div><div><b>悬疑推理</b><small>案件 / 反转 / 慢热</small></div></div>
+      <div class="cat"><div class="ico">罪</div><div><b>犯罪黑帮</b><small>家族 / 边境 / 权力</small></div></div>
+      <div class="cat"><div class="ico">科</div><div><b>科幻奇想</b><small>太空 / 时间 / 设定</small></div></div>
+      <div class="cat"><div class="ico">律</div><div><b>律政庭审</b><small>对白 / 案件 / 博弈</small></div></div>
+      <div class="cat"><div class="ico">剧</div><div><b>生活剧情</b><small>小镇 / 群像 / 治愈</small></div></div>
+      <div class="cat"><div class="ico">喜</div><div><b>轻喜剧</b><small>下饭 / 都市 / 短集</small></div></div>
+      <div class="cat"><div class="ico">惊</div><div><b>惊悚心理</b><small>氛围 / 限制级 / 悬疑</small></div></div>
+      <div class="cat"><div class="ico">经</div><div><b>经典补剧</b><small>老剧 / 口碑 / 长线</small></div></div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="sec" id="deep-analysis">
+    <div class="sec-head">
+      <h2>深度解析：天天美剧的题材特点与观看逻辑</h2>
+      <span class="sub">编辑视角 / 类型拆解</span>
+    </div>
+    <div class="article-box">
+      <h3>美剧的类型边界为什么越来越模糊</h3>
+      <p>讨论天天美剧，绕不开一个基本事实：近几年的美剧在类型上越来越难被单一标签概括。一部剧可能前几集是犯罪调查，中段转向家族伦理，结尾又带出政治阴谋。这种混合结构一方面提升了内容的可看性，另一方面也提高了观众的筛选成本。天天美剧在整理推荐时，会把“主类型”和“辅助元素”分开标注，例如<span class="hl">悬疑+家族史诗</span>、<span class="hl">科幻+生存群像</span>，这样更接近真实观感。</p>
+      <p>以悬疑推理为例，传统单元剧强调每集一个案件的独立性，观众可以随时切入；而近年更常见的做法是用一条贯穿全季的主线串起多个案件，单集解决局部问题，同时推进整体谜团。前者适合碎片化观看，后者更适合连续追更。天天美剧在推荐卡片中标注“单元+主线”或“长线叙事”，就是希望帮助观众提前判断自己的时间投入是否匹配。</p>
+
+      <h3>内容吸引点：从强情节到慢情绪</h3>
+      <p>强情节剧集依靠反转、冲突和信息差维持注意力，适合希望在有限时间内获得高密度刺激的观众。这类剧的常见问题是后劲不足，如果主线谜团铺得太大而收束乏力，观众容易在中后段流失。天天美剧在筛选时会更关注剧集是否有清晰的叙事目标，而不是单纯堆砌悬念。</p>
+      <p>慢情绪剧集则走另一条路，把重心放在人物关系、日常细节和情绪积累上。它们不一定每集都有钩子，但胜在耐看，适合固定时间慢慢推进。像小镇群像、生活流剧情这类内容，往往在第三四集之后才真正进入状态，观众如果只看首集可能会错过。天天美剧会在这类推荐里提示“慢热”，避免误判。</p>
+
+      <h3>人物与角色：美剧的长期资产</h3>
+      <p>美剧的季播结构决定了人物比单部电影更重要。一个立得住的角色可以支撑多季叙事，观众追更的动力很多时候来自“想看看这个人后来怎么样”，而不只是案件本身。天天美剧在角色分析上会关注三点：人物动机是否自洽、成长弧线是否有变化、配角是否有独立功能。群像剧尤其考验这一点，配角如果只是工具人，整体质感会明显下降。</p>
+      <p>以律政和犯罪题材为例，主角的专业能力往往是看点，但真正留住观众的是职业伦理与个人处境的冲突。天天美剧更倾向推荐那些愿意在人物灰色地带停留的作品，因为它们能提供比“好人赢坏人输”更复杂的观看体验。</p>
+
+      <h3>视听与节奏：决定追更体验的隐性因素</h3>
+      <p>画面色调、镜头节奏和配乐风格会直接影响观看感受。冷色调、低照度的剧集通常更适合悬疑和惊悚类型，但长时间观看容易疲劳；明亮色调的生活剧则更适合放松场景。天天美剧在推荐时会提示“氛围向”“画面冷峻”等信息，帮助观众按心情选择。</p>
+      <p>节奏方面，单集时长是一个容易被忽略的指标。四十分钟以上的剧集信息密度较高，适合整块时间观看；二十分钟左右的轻喜剧更适合碎片时间。天天美剧把集数、单集时长和更新频率放在推荐信息里，就是为了让观众先判断“这部剧是否适合我的作息”。</p>
+
+      <h3>适合人群与同类比较</h3>
+      <p>喜欢推理解谜的观众可以从悬疑推理分类入手，优先选择主线清晰、案件设计扎实的剧；偏好世界观构建的观众可以关注科幻奇想分类，注意区分硬设定与软设定；想找轻松内容的观众则可以直接看轻喜剧和生活剧情分类。天天美剧在同类比较上不做绝对排名，而是强调差异：同样是犯罪题材，有的侧重家族权力，有的侧重执法视角，有的侧重心理侧写，选择取决于你想看哪一面。</p>
+      <p>读者搜索“天天美剧”时，通常希望快速得到一个可执行的观看建议，而不是一篇泛泛的类型介绍。因此这个页面的推荐卡片、更新列表和常见问题都尽量给出具体信息，包括更新进度、适合场景和可能的观看门槛，让判断更接近真实决策。</p>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="sec" id="guide">
+    <div class="sec-head">
+      <h2>天天美剧浏览与追剧体验指南</h2>
+      <span class="sub">如何更高效地使用这个页面</span>
+    </div>
+    <div class="guide-grid">
+      <div class="guide"><div class="num">01</div><h4>先看类型再看剧名</h4><p>如果你没有明确目标，先从类型分类入口进入，比直接翻推荐列表更容易缩小范围。悬疑、科幻、生活剧的观看节奏差异很大，先定类型能省下不少试错时间。</p></div>
+      <div class="guide"><div class="num">02</div><h4>关注更新状态</h4><p>推荐卡片会标注当前更新进度。正在连载的剧适合追更，已完结的剧适合连续补看。天天美剧建议根据自己的空闲时间选择，避免同时追太多部导致进度混乱。</p></div>
+      <div class="guide"><div class="num">03</div><h4>用看点摘要做初筛</h4><p>每张卡片的摘要控制在几十字，目的不是剧透，而是让你判断题材和氛围是否合口味。看到“慢热”“长线叙事”这类提示时，可以据此调整预期。</p></div>
+      <div class="guide"><div class="num">04</div><h4>移动端阅读更轻便</h4><p>页面采用响应式布局，手机上会自动切换为单列信息流，适合通勤时快速浏览更新动态。深度解析部分建议在屏幕较大的设备上阅读。</p></div>
+      <div class="guide"><div class="num">05</div><h4>把推荐当备选清单</h4><p>不需要立刻决定看哪部，可以把感兴趣的剧记下来，等更新积累到一定集数再开始。天天美剧的更新列表会持续补充，方便回头查看。</p></div>
+      <div class="guide"><div class="num">06</div><h4>延伸浏览路径</h4><p>从推荐卡片到深度解析，再到常见问题和剧集资讯，页面内部有连续的浏览路径。按这个顺序读下来，对一部剧的了解会比单看简介更完整。</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="sec-head">
+      <h2>天天美剧常见问题</h2>
+      <span class="sub">观看顺序 / 类型选择 / 更新关注</span>
+    </div>
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>第一次看美剧，应该从哪一类开始？</summary>
+        <p>如果平时很少看长剧，建议先从单集二十分钟左右的轻喜剧或单元剧入手，比如都市合租、律政单元这类结构清晰的作品。它们对连续观看的要求不高，随时可以暂停。等适应了美剧的叙事节奏，再尝试悬疑或科幻这种需要连续追更的类型。天天美剧的分类入口里，“轻喜剧”和“律政庭审”都比较适合作为入门方向。</p>
+      </details>
+      <details class="faq">
+        <summary>天天美剧推荐里的“慢热”是什么意思？</summary>
+        <p>“慢热”通常指剧集前几集节奏较缓，重点在铺人物和世界观，真正的冲突要到中段才展开。这类剧不适合用首集判断好坏，但坚持看下去往往回报较高。如果你时间有限、希望快速进入状态，可以优先选择标注“强情节”或“单元剧”的作品；如果你更看重人物和氛围，慢热剧反而更耐看。</p>
+      </details>
+      <details class="faq">
+        <summary>悬疑和犯罪题材有什么区别，该怎么选？</summary>
+        <p>悬疑更强调谜题和反转，观众的核心乐趣是推理和猜真相；犯罪题材则更关注权力结构、家族关系或执法过程，谜题只是叙事的一部分。想动脑解谜可以选悬疑推理，想看人物博弈和群像可以选犯罪黑帮。天天美剧在标签上做了区分，主类型和辅助元素会同时标注，方便判断。</p>
+      </details>
+      <details class="faq">
+        <summary>正在连载的剧和已完结的剧，追哪个更合适？</summary>
+        <p>连载剧的好处是能跟上讨论节奏，坏处是每周等待、容易忘剧情；完结剧可以一口气看完，体验更完整，但缺少同步讨论的乐趣。天天美剧建议按空闲时间选择：如果每周能固定留出时间，追连载更有参与感；如果时间零散，完结剧更省心。页面的更新列表会标出当前进度，方便判断积累量。</p>
+      </details>
+      <details class="faq">
+        <summary>科幻类美剧的设定门槛高吗？</summary>
+        <p>不能一概而论。太空生存、时间循环这类偏硬设定的剧需要观众接受一定规则，但多数作品会在前两集把核心设定讲清楚，不需要专业背景。天天美剧会在推荐里提示“硬设定”或“软设定”，前者规则更严密，后者更偏人物和情绪。担心看不懂的观众可以先从软设定作品入手。</p>
+      </details>
+      <details class="faq">
+        <summary>天天美剧的更新信息多久整理一次？</summary>
+        <p>页面按剧集实际更新节奏整理动态，重点关注当季连载剧的集数进度和档期变化。天天美剧的更新列表会标注日期，方便对照。由于不同剧集更新频率不同，建议收藏页面后按分类回看，而不是每天刷新。遇到季终或新剧上线，资讯区也会补充说明。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 评论 -->
+  <section class="sec" id="comments">
+    <div class="sec-head">
+      <h2>剧迷评论：大家在天天美剧聊什么</h2>
+      <span class="sub">近30天讨论摘录</span>
+    </div>
+    <div class="cmt-grid">
+      <div class="cmt"><div class="top"><span class="av">林</span><span class="name">林间有雾</span><time class="time">11-06</time></div><p>雾港档案第二季比第一季稳，双时间线终于开始收口了，前几集我还担心铺太大收不回来。</p></div>
+      <div class="cmt"><div class="top"><span class="av">陈</span><span class="name">陈默看剧</span><time class="time">11-06</time></div><p>轨道之外的氧气危机那集拍得挺克制，没有强行煽情，这点比很多太空剧好。</p></div>
+      <div class="cmt"><div class="top"><span class="av">阿</span><span class="name">阿柚不加冰</span><time class="time">11-05</time></div><p>合租公寓404季终有点仓促，感觉两条线没收干净，希望下一季能补回来。</p></div>
+      <div class="cmt"><div class="top"><span class="av">周</span><span class="name">周末补剧人</span><time class="time">11-05</time></div><p>第七法庭的台词密度真高，稍微走神就跟不上，适合专心看，不适合当背景音。</p></div>
+      <div class="cmt"><div class="top"><span class="av">许</span><span class="name">许一川</span><time class="time">11-04</time></div><p>时间褶皱的规则越加越多，我拿本子记线索了，好久没这么认真追剧。</p></div>
+      <div class="cmt"><div class="top"><span class="av">南</span><span class="name">南方小满</span><time class="time">11-04</time></div><p>北纬四十七度节奏是真的慢，但看着很舒服，适合睡前看一集。</p></div>
+      <div class="cmt"><div class="top"><span class="av">何</span><span class="name">何故观星</span><time class="time">11-03</time></div><p>锈色边境第四季人物有点多，我前两集脸盲了，建议先看人物关系再追。</p></div>
+      <div class="cmt"><div class="top"><span class="av">苏</span><span class="name">苏打水没有气</span><time class="time">11-03</time></div><p>暗室信号氛围做得不错，但解释部分有点拖，希望后面别烂尾。</p></div>
+      <div class="cmt"><div class="top"><span class="av">顾</span><span class="name">顾言不追更</span><time class="time">11-02</time></div><p>天天美剧的更新列表挺实用的，至少不用一个个平台去翻进度。</p></div>
+      <div class="cmt"><div class="top"><span class="av">白</span><span class="name">白露为霜</span><time class="time">11-02</time></div><p>无声证人的案件设计比同类剧扎实，法医细节没有太糊弄。</p></div>
+      <div class="cmt"><div class="top"><span class="av">江</span><span class="name">江上晚风</span><time class="time">11-01</time></div><p>想找下饭剧，按分类入口点进轻喜剧，确实比乱翻效率高。</p></div>
+      <div class="cmt"><div class="top"><span class="av">程</span><span class="name">程小北</span><time class="time">11-01</time></div><p>建议推荐卡片再多标一下单集时长，有些剧四十分钟一集，通勤时间不够看。</p></div>
+      <div class="cmt"><div class="top"><span class="av">沈</span><span class="name">沈三白</span><time class="time">10-31</time></div><p>科幻分类里希望多来点软设定作品，硬设定看多了有点累。</p></div>
+      <div class="cmt"><div class="top"><span class="av">陆</span><span class="name">陆离不迷路</span><time class="time">10-30</time></div><p>雾港档案的反派塑造比主角有意思，希望后面别草草收场。</p></div>
+      <div class="cmt"><div class="top"><span class="av">叶</span><span class="name">叶落知秋</span><time class="time">10-29</time></div><p>第七法庭第三季律所内部线有点抢戏，我其实更想看纯庭审。</p></div>
+      <div class="cmt"><div class="top"><span class="av">唐</span><span class="name">唐酒卿</span><time class="time">10-28</time></div><p>作为刚入坑的，这个页面的类型说明帮了大忙，至少知道悬疑和犯罪不是一回事。</p></div>
+      <div class="cmt"><div class="top"><span class="av">方</span><span class="name">方糖不甜</span><time class="time">10-27</time></div><p>合租公寓404前几集笑点密，后面有点依赖固定梗，希望下一季换换套路。</p></div>
+      <div class="cmt"><div class="top"><span class="av">韩</span><span class="name">韩青野</span><time class="time">10-26</time></div><p>时间循环题材最怕解释不清，这部目前还在可控范围，继续观望。</p></div>
+      <div class="cmt"><div class="top"><span class="av">莫</span><span class="name">莫问归期</span><time class="time">10-25</time></div><p>希望天天美剧多整理一些完结老剧，新剧追不过来，补经典更踏实。</p></div>
+      <div class="cmt"><div class="top"><span class="av">秦</span><span class="name">秦时明月夜</span><time class="time">10-24</time></div><p>整体信息整理得清楚，就是深度解析可以再多点同类对比。</p></div>
+    </div>
+  </section>
+
+  <!-- 资讯 -->
+  <section class="sec" id="news">
+    <div class="sec-head">
+      <h2>天天美剧剧集资讯</h2>
+      <span class="sub">档期 / 续订 / 看点动态</span>
+    </div>
+    <div class="news-grid">
+      <article class="news"><time>2026-11-07</time><h4>悬疑新剧《午夜订正》确认首季八集档期</h4><p>主打校园失踪案与时间线错位双线叙事，主创团队此前有单元剧经验，节奏值得期待。</p></article>
+      <article class="news"><time>2026-11-06</time><h4>《雾港档案》第二季进入中段，主线回收加速</h4><p>最新两集开始解释第一季遗留的证人线索，观众讨论热度明显上升。</p></article>
+      <article class="news"><time>2026-11-05</time><h4>《合租公寓404》季终，续订消息待确认</h4><p>季终集留下两条未收束的人物线，制作方表示会根据收视反馈决定下一季方向。</p></article>
+      <article class="news"><time>2026-11-04</time><h4>科幻剧《轨道之外》口碑走高，生存群像受关注</h4><p>该剧以资源分配和信任危机为核心，科学设定相对克制，被观众称为“慢热但扎实”。</p></article>
+      <article class="news"><time>2026-11-02</time><h4>律政剧《第七法庭》第三季调整庭审比例</h4><p>制作方回应观众反馈，后续集数将提高单集案件比重，减少律所内部线篇幅。</p></article>
+      <article class="news"><time>2026-10-30</time><h4>天天美剧整理当季追剧日历，覆盖十余部连载剧</h4><p>更新日历按周整理剧集进度，方便观众对照自己的空闲时间安排追更节奏。</p></article>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section class="sec" id="subscribe">
+    <div class="subscribe">
+      <h2>订阅天天美剧追剧提醒</h2>
+      <p>留下邮箱，第一时间获取当季新剧档期、连载进度与口碑变化整理。</p>
+      <form class="sub-form" onsubmit="return false">
+        <input type="email" placeholder="输入你的邮箱地址">
+        <button type="button">立即订阅</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>关于天天美剧</h5>
+        <p>天天美剧是一个面向美剧观众的内容整理与追剧参考页面，围绕剧集类型、更新动态、观看节奏和常见问题组织信息，帮助观众更高效地选择下一部要追的剧。</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <a href="/#hot-picks">热门推荐</a>
+        <a href="/#latest-update">最新更新</a>
+        <a href="/#cat-entry">类型分类</a>
+        <a href="/#deep-analysis">深度解析</a>
+      </div>
+      <div>
+        <h5>阅读入口</h5>
+        <a href="/#guide">追剧指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">剧迷评论</a>
+        <a href="/#news">剧集资讯</a>
+      </div>
+      <div>
+        <h5>友情链接</h5>
+        <a href="/#top-nav">友情链接位 1</a>
+        <a href="/#top-nav">友情链接位 2</a>
+        <a href="/#top-nav">友情链接位 3</a>
+        <a href="/#top-nav">友情链接位 4</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 天天美剧 · 内容整理与追剧参考页面</p>
+      <p>免责声明：本站内容为剧集信息整理与观感分析，剧集名称、档期及更新进度以官方发布为准，页面信息仅供参考。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+                         </html>
